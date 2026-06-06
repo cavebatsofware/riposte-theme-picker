@@ -1,12 +1,12 @@
 {
-  "name": "@cavebatsofware/riposte-theme-picker",
+  "name": "@cavebatsofware/riposte-pickers",
   "version": "0.1.0",
-  "description": "Accessible React colorway + light/dark theme picker with a localStorage-backed engine. Extracted from riposte-social.",
+  "description": "Accessible React theme and language pickers sharing one popover/roving-focus chassis, with a localStorage-backed theme engine. Extracted from riposte-social.",
   "license": "GPL-3.0-only",
   "author": "Grant DeFayette <grant@cavebatsofware.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cavebatsofware/riposte-theme-picker.git"
+    "url": "git+https://github.com/cavebatsofware/riposte-pickers.git"
   },
   "type": "module",
   "sideEffects": [
@@ -27,6 +27,36 @@
         "default": "./dist/index.cjs"
       }
     },
+    "./theme": {
+      "import": {
+        "types": "./dist/theme.d.ts",
+        "default": "./dist/theme.js"
+      },
+      "require": {
+        "types": "./dist/theme.d.cts",
+        "default": "./dist/theme.cjs"
+      }
+    },
+    "./language": {
+      "import": {
+        "types": "./dist/language.d.ts",
+        "default": "./dist/language.js"
+      },
+      "require": {
+        "types": "./dist/language.d.cts",
+        "default": "./dist/language.cjs"
+      }
+    },
+    "./shared": {
+      "import": {
+        "types": "./dist/shared.d.ts",
+        "default": "./dist/shared.js"
+      },
+      "require": {
+        "types": "./dist/shared.d.cts",
+        "default": "./dist/shared.cjs"
+      }
+    },
     "./i18n": {
       "import": {
         "types": "./dist/i18n/index.d.ts",
@@ -39,7 +69,8 @@
     },
     "./styles": "./styles/index.css",
     "./styles/palette.css": "./styles/palette.css",
-    "./styles/picker.css": "./styles/picker.css"
+    "./styles/picker.css": "./styles/picker.css",
+    "./styles/language.css": "./styles/language.css"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

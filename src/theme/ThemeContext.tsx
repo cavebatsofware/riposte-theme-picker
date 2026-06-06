@@ -1,4 +1,4 @@
-/*  This file is part of @cavebatsofware/riposte-theme-picker
+/*  This file is part of @cavebatsofware/riposte-pickers
  *  Copyright (C) 2026 Grant DeFayette
  *
  *  This program is free software: you can redistribute it and/or modify

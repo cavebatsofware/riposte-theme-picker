@@ -14,27 +14,11 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
  */
 
-// Theme picker
-export {
-  ThemeProvider,
-  useTheme,
-  COLORWAYS,
-  DEFAULT_COLORWAY,
-  DEFAULT_STORAGE_KEY,
-  ThemePicker,
-} from "./theme";
-export type {
-  Colorway,
-  ThemeMode,
-  ThemeContextValue,
-  ThemeProviderProps,
-  ThemePickerProps,
-} from "./theme";
+/// Shared chassis for the pickers: the toggle/popover/focus shell and the
+/// roving-focus keyboard hook. Both are exported so consumers can build
+/// sibling pickers (visibility, compose, etc.) on the same foundation.
+export { default as PopoverPicker } from "./PopoverPicker";
+export type { PopoverPickerProps } from "./PopoverPicker";
 
-// Language picker
-export { LanguagePicker, DEFAULT_LANGUAGES } from "./language";
-export type { LanguagePickerProps, Language } from "./language";
-
-// Shared chassis
-export { PopoverPicker, useRovingFocus } from "./shared";
-export type { PopoverPickerProps, RovingFocusOptions } from "./shared";
+export { default as useRovingFocus } from "./useRovingFocus";
+export type { RovingFocusOptions } from "./useRovingFocus";

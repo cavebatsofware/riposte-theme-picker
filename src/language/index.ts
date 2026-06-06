@@ -13,28 +13,8 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
  */
+export { default as LanguagePicker } from "./LanguagePicker";
+export type { LanguagePickerProps } from "./LanguagePicker";
 
-// Theme picker
-export {
-  ThemeProvider,
-  useTheme,
-  COLORWAYS,
-  DEFAULT_COLORWAY,
-  DEFAULT_STORAGE_KEY,
-  ThemePicker,
-} from "./theme";
-export type {
-  Colorway,
-  ThemeMode,
-  ThemeContextValue,
-  ThemeProviderProps,
-  ThemePickerProps,
-} from "./theme";
-
-// Language picker
-export { LanguagePicker, DEFAULT_LANGUAGES } from "./language";
-export type { LanguagePickerProps, Language } from "./language";
-
-// Shared chassis
-export { PopoverPicker, useRovingFocus } from "./shared";
-export type { PopoverPickerProps, RovingFocusOptions } from "./shared";
+export { DEFAULT_LANGUAGES } from "./languages";
+export type { Language } from "./languages";
