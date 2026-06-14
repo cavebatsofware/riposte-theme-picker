@@ -1,3 +1,5 @@
-@import "./palette.css";
+/*  Picker component styles. The design tokens these consume (palette + the
+ *  shared scale) now ship in @cavebatsofware/riposte-design-system/styles; load
+ *  that at your app root as well. */
 @import "./picker.css";
 @import "./language.css";

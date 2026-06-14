@@ -5,6 +5,7 @@
     "": {
       "name": "@cavebatsofware/riposte-theme-picker",
       "devDependencies": {
+        "@cavebatsofware/riposte-design-system": "file:../riposte-design-system",
         "@types/react": "^19.0.0",
         "@types/react-dom": "^19.0.0",
         "react": "^19.0.0",
@@ -14,14 +15,20 @@
         "typescript": "^5.6.0",
       },
       "peerDependencies": {
+        "@cavebatsofware/riposte-design-system": ">=0.1.0",
         "react": ">=18",
         "react-dom": ">=18",
         "react-i18next": ">=13",
       },
+      "optionalPeers": [
+        "@cavebatsofware/riposte-design-system",
+      ],
     },
   },
   "packages": {
     "@babel/runtime": ["@babel/runtime@7.29.7", "", {}, "sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw=="],
+
+    "@cavebatsofware/riposte-design-system": ["@cavebatsofware/riposte-design-system@file:../riposte-design-system", { "devDependencies": { "@types/react": "^19.0.0", "@types/react-dom": "^19.0.0", "react": "^19.0.0", "react-dom": "^19.0.0", "react-i18next": "^17.0.0", "tsup": "^8.3.0", "typescript": "^5.6.0" }, "peerDependencies": { "react": ">=18", "react-dom": ">=18", "react-i18next": ">=13" } }],
 
     "@esbuild/aix-ppc64": ["@esbuild/aix-ppc64@0.27.7", "", { "os": "aix", "cpu": "ppc64" }, "sha512-EKX3Qwmhz1eMdEJokhALr0YiD0lhQNwDqkPYyPhiSwKrh7/4KRjQc04sZ8db+5DVVnZ1LmbNDI1uAMPEUBnQPg=="],
 

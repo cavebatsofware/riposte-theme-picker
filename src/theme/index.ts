@@ -13,19 +13,9 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
  */
-export {
-  ThemeProvider,
-  useTheme,
-  COLORWAYS,
-  DEFAULT_COLORWAY,
-  DEFAULT_STORAGE_KEY,
-} from "./ThemeContext";
-export type {
-  Colorway,
-  ThemeMode,
-  ThemeContextValue,
-  ThemeProviderProps,
-} from "./ThemeContext";
 
+// The theme engine (ThemeProvider, useTheme, COLORWAYS) now lives in
+// @cavebatsofware/riposte-design-system/theme; import it from there. This
+// package ships the picker UI that drives the engine.
 export { default as ThemePicker } from "./ThemePicker";
 export type { ThemePickerProps } from "./ThemePicker";

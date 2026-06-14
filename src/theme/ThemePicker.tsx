@@ -15,8 +15,8 @@
  */
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useTheme, type ThemeMode } from "./ThemeContext";
-import PopoverPicker from "../shared/PopoverPicker";
+import { useTheme, type ThemeMode } from "@cavebatsofware/riposte-design-system/theme";
+import { PopoverPicker } from "@cavebatsofware/riposte-design-system/shared";
 
 const ARROW_KEYS = ["ArrowDown", "ArrowUp", "ArrowRight", "ArrowLeft", "Home", "End"];
 

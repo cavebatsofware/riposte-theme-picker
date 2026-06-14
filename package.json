@@ -1,7 +1,7 @@
 {
   "name": "@cavebatsofware/riposte-pickers",
-  "version": "0.1.0",
-  "description": "Accessible React theme and language pickers sharing one popover/roving-focus chassis, with a localStorage-backed theme engine. Extracted from riposte-social.",
+  "version": "0.2.0",
+  "description": "Accessible React theme and language pickers for the Riposte design system. The theme engine and popover/roving-focus chassis they build on ship in @cavebatsofware/riposte-design-system.",
   "license": "GPL-3.0-only",
   "author": "Grant DeFayette <grant@cavebatsofware.com>",
   "repository": {
@@ -47,16 +47,6 @@
         "default": "./dist/language.cjs"
       }
     },
-    "./shared": {
-      "import": {
-        "types": "./dist/shared.d.ts",
-        "default": "./dist/shared.js"
-      },
-      "require": {
-        "types": "./dist/shared.d.cts",
-        "default": "./dist/shared.cjs"
-      }
-    },
     "./i18n": {
       "import": {
         "types": "./dist/i18n/index.d.ts",
@@ -68,7 +58,6 @@
       }
     },
     "./styles": "./styles/index.css",
-    "./styles/palette.css": "./styles/palette.css",
     "./styles/picker.css": "./styles/picker.css",
     "./styles/language.css": "./styles/language.css"
   },
@@ -81,11 +70,18 @@
     "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
+    "@cavebatsofware/riposte-design-system": ">=0.1.0",
     "react": ">=18",
     "react-dom": ">=18",
     "react-i18next": ">=13"
   },
+  "peerDependenciesMeta": {
+    "@cavebatsofware/riposte-design-system": {
+      "optional": true
+    }
+  },
   "devDependencies": {
+    "@cavebatsofware/riposte-design-system": "file:../riposte-design-system",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "react": "^19.0.0",

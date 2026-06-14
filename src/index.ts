@@ -14,27 +14,14 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
  */
 
+// The theme engine and the popover/roving-focus chassis moved to
+// @cavebatsofware/riposte-design-system (./theme and ./shared). This package is
+// now just the pickers built on top of them.
+
 // Theme picker
-export {
-  ThemeProvider,
-  useTheme,
-  COLORWAYS,
-  DEFAULT_COLORWAY,
-  DEFAULT_STORAGE_KEY,
-  ThemePicker,
-} from "./theme";
-export type {
-  Colorway,
-  ThemeMode,
-  ThemeContextValue,
-  ThemeProviderProps,
-  ThemePickerProps,
-} from "./theme";
+export { ThemePicker } from "./theme";
+export type { ThemePickerProps } from "./theme";
 
 // Language picker
 export { LanguagePicker, DEFAULT_LANGUAGES } from "./language";
 export type { LanguagePickerProps, Language } from "./language";
-
-// Shared chassis
-export { PopoverPicker, useRovingFocus } from "./shared";
-export type { PopoverPickerProps, RovingFocusOptions } from "./shared";

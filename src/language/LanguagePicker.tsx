@@ -15,8 +15,7 @@
  */
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import PopoverPicker from "../shared/PopoverPicker";
-import useRovingFocus from "../shared/useRovingFocus";
+import { PopoverPicker, useRovingFocus } from "@cavebatsofware/riposte-design-system/shared";
 import { DEFAULT_LANGUAGES, type Language } from "./languages";
 
 export interface LanguagePickerProps {
